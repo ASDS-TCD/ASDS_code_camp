@@ -2,6 +2,15 @@
 Lecture handouts and script files for the ASDS code camp at TCD.\
 Yours to download and keep forever.
 
+The *Code Camp* is designed to give you training in three main areas: R basics, Python basics, and developing an effective computational workflow.
+
+At the end of camp, students will be able to:
+
+- Start the semester excited and ready to learn new methods :)
+- Combine the 5 dplyr verbs, join data sets, and convert between long and wide formats
+- Use loops, purrr, and functions to avoid repeating yourself
+- Make simple graphs in ggplot2, write professional documents, and write basic equations in LaTeX
+
 Note: to download *all* files in a zip, click on the green "code" button on this page and then "download zip".
 
 *IF YOU DID NOT ATTEND CODE CAMP* \
