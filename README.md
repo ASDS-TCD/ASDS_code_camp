@@ -1,4 +1,4 @@
-# ASDS_code_camp
+# ASDS Code Camp
 Lecture handouts and script files for the ASDS code camp at TCD.\
 Yours to download and keep forever.
 
