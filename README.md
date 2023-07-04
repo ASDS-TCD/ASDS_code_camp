@@ -11,6 +11,20 @@ At the end of camp, students will be able to:
 - Use loops, purrr, and functions to avoid repeating yourself
 - Make simple graphs in ggplot2, write professional documents, and write basic equations in LaTeX
 
+**Pre-arrival**
+
+You may find the [RStudio Primers](https://posit.cloud/learn/primers) especially helpful as you prepare for camp and the upcoming year. These will be especially helpful if you have limited experience with R. Based on feedback from previous graduate students, practicing R coding is one of the best ways to prepare over the summer for the graduate statistics sequence.
+
+The Basics (all sub-modules)
+
+Work With Data (all sub-modules)
+
+Visualize Data - (Exploratory Data Analysis and Scatterplots sub-modules)
+
+Write Functions (complete Function Basics and How to Write a Function)
+
+We have left open an option of an exemption from this part of the assignment. To request an exemption please email Angela and Varun an example of some code you have written, including the date of the code, purpose, and a 1-2 sentence explanation of what the code does.
+
 Note: to download *all* files in a zip, click on the green "code" button on this page and then "download zip".
 
 *IF YOU DID NOT ATTEND CODE CAMP* \
