@@ -7,9 +7,10 @@ The *Code Camp* is designed to give you training in three main areas: R basics, 
 At the end of camp, students will be able to:
 
 - Start the semester excited and ready to learn new methods :smile:
-- Combine the 5 dplyr verbs, join data sets, and convert between long and wide formats
-- Use loops, purrr, and functions to avoid repeating yourself
-- Make simple graphs in ggplot2, write professional documents, and write basic equations in LaTeX
+- Understand basic Data Science workflows and good work practices
+- Import libraries, download and merge datasets, and apply functions
+- Make simple graphs in ggplot2
+- Write professional documents using RMarkdown and LaTeX
 
 **Pre-arrival**
 
