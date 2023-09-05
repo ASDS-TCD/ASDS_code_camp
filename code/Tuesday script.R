@@ -13,6 +13,9 @@ This will be read by R, and will produce an error message
 # First things first
 ####################
 
+# Run line shortcut = Ctrl + Enter
+# Read script title = not saved
+
 # An R session should begin as an empty space, i.e. there
 # should be no *objects* in our environment. 
 
@@ -22,6 +25,15 @@ This will be read by R, and will produce an error message
 
 ls()
 
+# Look at some data sets (as we did before RStudio)
+data()
+
+Nile
+help(Nile)
+mean(Nile)
+plot(Nile)
+hist(Nile)
+
 # Now let's make an object. To make an object, we need a
 # name (here "x"), and some value(s) to assign to it. We 
 # use the *assignment operator* <- to assign the name to
@@ -30,70 +42,50 @@ ls()
 x <- "Hello world"
 
 # Now try calling x.
-
 x
 
 # And see what happens when we call the ls() function again.
-
 ls()
 
-# One of R's strengths is the large number of *packages*
-# which users have created for different tasks. Packages
-# contain functions which we can use on our data.
+# Simple commands
 
-# The search() function shows us which packages are loaded
-# in our R session. 
+# R calculates stuff, e.g., add 2 and 2
+2 + 2
 
-search()
+# Create 7 random numbers between 0 and 1
+runif(7)
 
-# The install.packages() function allows us to install new
-# packages from the web. Here, we are installing a suite
-# of packages known as the "tidyverse".
+# R allows for two different versions to assign a value to a name
+z <- 2 + 2 #better way
+z = 2 + 2
 
-install.packages("tidyverse")
+# "c" stands for concatenate so "y" here stores the values 1, 2 and 4.
+y <- c(1, 2, 4)
 
-# Installing a package does not make it available to us in
-# our R session. To make a package available, along with
-# its functions, we need to use the library() function.
+#Parts of individual objects can be accessed via square brackets
+y[3]
 
-library("tidyverse")
+# We can access multiple parts of objects with a colon
+y[2:3]
 
-search()
+# Suppose now we want the sum of y
+sum(y)
 
-# The tidyverse packages are now listed in our session.
+# Store the output of a function in another object
+z <- sum(y)
+# Notice we replaced the former "z" object
 
-#######
-# Help!
-#######
 
-# There are many ways of accessing help in R. The help()
-# function is the main method. Its shortcut is "?". 
+# Can you use the sqrt() function to compute the square root of 962?
 
-help(tidyverse)
-?tidyverse
-?persp
+# Answer?
 
-# The example() function provides an interactive demo
+# Can you now assign to a new object?
 
-example(persp)
 
-# Some packages have *vignettes*, which go into more 
-# detail than R help files (which can be very terse). 
-# The vignette() function accesses these, or use
-# browseVignettes(package = "name") to search.
-
-?dplyr
-vignette("dplyr")
-browseVignettes(package = "dplyr")
-
-# If you're looking for help on a particular area, and
-# aren't sure what function or package to use, try the
-# help.search() function. 
-
-help.search("standard deviation")
 
 ######
-# OOPs
+# OOP
 ######
 
 # R is an *object-oriented programming language*. This 
@@ -142,7 +134,16 @@ x[2] <- "world"
 
 x
 length(x)
-str_length(x)
+
+
+# If the elements of your vector have names, you can extract them by name.
+# To do so place a name or vector of names in the brackets behind a vector. Surround each name with quotation marks
+
+# Extract the element named gamma from the vector below.
+vec2 <- c(alpha = 1, beta = 2, gamma = 3)
+
+
+
 
 # We can use functions to create objects. Here, we use
 # rnorm() to create an object comprising 50 *random* 
@@ -154,6 +155,20 @@ x <- rnorm(n = 50)
 length(x)
 mean(x)
 sd(x)
+
+
+# Use rnrom() to generate 100 random normal values 
+# with a mean of 100 and a standard deviation of 15.
+
+
+
+
+#Now assign them to an object named data.
+#Then, on a new line, call the hist() function on data
+# to plot a histogram of the random values.
+
+
+
 
 # A strength of R is that many functions will be applied
 # automatically to every element in an object. Here, the
@@ -172,6 +187,7 @@ y <- 2*y
 
 xylm <- lm(y~x)
 xylm
+
 
 # We use the attributes() function to list the objects 
 # created by lm(). 
@@ -269,18 +285,61 @@ xVar_s <- xSumDevSq/(xLength - 1)
 XSD_s <- sqrt(xVar_s)
 sd(x)
 
-# By playing around a little with existing functions, R
-# allows us to create a new function which calculates 
-# standard deviation for a population. Do not worry about
-# what's going on here: the aim is simply to show you how
-# using objects and functions allows us to condense our
-# workload massively.
 
-sd_p <- function(x){
-  sd(x)*sqrt((length(x)-1)/length(x))
-}
+# One of R's strengths is the large number of *packages*
+# which users have created for different tasks. Packages
+# contain functions which we can use on our data.
 
-sd_p(x)
+# The search() function shows us which packages are loaded
+# in our R session. 
+
+search()
+
+# The install.packages() function allows us to install new
+# packages from the web. Here, we are installing a suite
+# of packages known as the "tidyverse".
+
+install.packages("tidyverse")
+
+# Installing a package does not make it available to us in
+# our R session. To make a package available, along with
+# its functions, we need to use the library() function.
+
+library("tidyverse")
+
+search()
+
+# The tidyverse packages are now listed in our session.
+
+#######
+# Help!
+#######
+
+# There are many ways of accessing help in R. The help()
+# function is the main method. Its shortcut is "?". 
+
+help(tidyverse)
+?tidyverse
+?persp
+
+# The example() function provides an interactive demo
+
+example(persp)
+
+# Some packages have *vignettes*, which go into more 
+# detail than R help files (which can be very terse). 
+# The vignette() function accesses these, or use
+# browseVignettes(package = "name") to search.
+
+?dplyr
+vignette("dplyr")
+browseVignettes(package = "dplyr")
+
+# If you're looking for help on a particular area, and
+# aren't sure what function or package to use, try the
+# help.search() function. 
+
+help.search("standard deviation")
 
 #####################
 # Taking R for a spin
@@ -352,14 +411,6 @@ ggplot(mtcars, aes(wt, mpg, size = hp)) +
 
 help(mpg)
 head(mpg)
-
-#plot(mpg$xvar, mpg$yvar)
-
-#ggplot(mpg, aes(xvar, yvar)) +
-  #geom_point()
-  #geom_line()
-  #geom_hist()  #note: takes only 1 continous xvar as an argument in ggplot()
-
 
 ################
 # And finally...
