@@ -15,7 +15,8 @@ At the end of camp, students will be able to:
 
 This repository contains all lecture handouts and script/markdown files from classes.\
 Files are divided into two folders: code contains code files, documentation contains handouts.\
-You can download this material and work through it yourself. All scripts are commented.
+You can download this material and work through it yourself. All scripts are commented.\
+The file names correspond to the weekday they were used, note that Tuesday we used the R script only.
 
 **Note**: To download *all* files in a zip, click on the green "code" button on this page and then "download zip".
 
