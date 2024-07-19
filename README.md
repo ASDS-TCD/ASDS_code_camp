@@ -1,6 +1,6 @@
 # 2023 ASDS Coding Camp
 Lecture handouts and script files for the ASDS code camp at TCD.\
-Special thanks to Dr. Martyn Eagan for his input and course materials.
+Special thanks to Dr. Martyn Egan for his input and course materials.
 
 
 The *Coding Camp* is designed to give you training in three main areas: R basics, Python basics, and developing an effective computational workflow.
